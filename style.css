@@ -1,0 +1,583 @@
+@font-face {
+	font-family: GilroyM;
+	src: url(./assets/font/Gilroy-Medium.ttf);
+}
+
+@font-face {
+	font-family: GilroyB;
+	src: url(./assets/font/Gilroy-Bold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: GilroyM;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+*::selection {
+	background-color: #027958;
+	color: #410fab;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #101010;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #410fab;
+	height: 10%;
+}
+
+#main {
+	width: 100%;
+	min-height: 100vh;
+}
+
+nav {
+	width: 100%;
+	height: 13vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0vw 13vw;
+	background-color: #101010;
+}
+
+nav img {
+	width: 3vw;
+}
+
+nav a {
+	text-decoration: none;
+	color: #f8f8f8;
+	font-size: 1vw;
+	font-family: GilroyB;
+}
+
+.right-nav {
+	display: flex;
+	gap: 2vw;
+}
+
+.part-1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 3.5vh;
+	width: 100%;
+	height: 87vh;
+	background-color: #101010;
+	color: #f8f8f8;
+}
+
+.part-1 h1 {
+	margin-top: -10vh;
+	font-size: 7vw;
+	font-family: GilroyB;
+	text-align: center;
+}
+
+.part-1 p {
+	font-size: 1.5vw;
+	font-family: GilroyB;
+	text-align: center;
+}
+
+.part-1 button {
+	padding: 1vw 2.5vw;
+	font-size: 1.2vw;
+	border-radius: 50px;
+	color: #101010;
+	font-family: GilroyB;
+	background-color: #f8f8f8;
+	border: 1px solid #f8f8f8;
+	transition: all 300m s ease-in-out;
+}
+
+.part-1 button:hover {
+	color: #f8f8f8;
+	background-color: transparent;
+}
+
+.part-2 {
+	position: relative;
+	display: flex;
+	align-items: end;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	background-image: url(./assets/IMG/CBiEOS.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	box-shadow: inset 0px 0px 200px 200px rgba(16, 16, 16, 0.8);
+}
+
+.part-2 img {
+	transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+#imgthree {
+	position: absolute;
+	bottom: -50vh;
+	z-index: 5;
+}
+
+#imgtwo,
+#imgfour {
+	position: absolute;
+	z-index: 4;
+	bottom: -50vh;
+}
+
+#imgtwo {
+	left: 25%;
+}
+
+#imgfour {
+	right: 25%;
+}
+
+#imgone,
+#imgfive {
+	position: absolute;
+	bottom: -50vh;
+}
+
+#imgone {
+	left: 10%;
+}
+
+#imgfive {
+	right: 10%;
+}
+
+.part-same {
+	width: 100%;
+	height: 100vh;
+	background-color: #000;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0vw 10vw;
+	color: #fff;
+}
+
+.part-3 {
+	background-image: url(./assets/IMG/deserve-more-bg.jpg);
+}
+
+.part-same h1 {
+	font-size: 5vw;
+	font-family: GilroyB;
+	line-height: 10vh;
+}
+
+.part-same h3 {
+	font-size: 1.5vw;
+	font-family: GilroyB;
+	margin-bottom: 10vh;
+	margin-top: 3vh;
+}
+
+.part-same p {
+	font-size: 1vw;
+	font-family: GilroyB;
+	width: 45%;
+}
+
+.part-same button {
+	margin-top: 5vh;
+	padding: 1vw 3vw;
+	font-size: 1.2vw;
+	border-radius: 50px;
+	font-family: GilroyB;
+	border: 1px solid #fff;
+	background-color: #fff;
+	transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+	color: #000;
+}
+
+.part-same button:hover {
+	color: #fff;
+	border: 1px solid #fff;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.strip {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 30vh;
+	background-color: #fff;
+	padding: 0vw 10vw;
+	gap: 5vh;
+}
+
+.strip h3 {
+	font-size: 1.3vw;
+}
+
+.strip img {
+	width: 80vw;
+}
+
+.part-4 {
+	background-image: url(./assets/IMG/money-matters-bg.jpg);
+}
+
+
+/* ---------part-5------------ */
+
+#part-5 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	padding: 0vw 0vw 0vw 10vw;
+	height: 100vh;
+	background-color: #111;
+}
+
+.left-part-5 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	width: 50%;
+	height: 100vh;
+}
+
+.scroll-txt {
+	position: absolute;
+	bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
+	gap: 8vh;
+}
+
+.left-part-5 p {
+	width: 90%;
+}
+
+.right-part-5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	height: 100vh;
+}
+
+.phone {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 20vw;
+	height: 60vh;
+	border-radius: 50px;
+	border: 1.5vw solid #212121;
+	overflow: hidden;
+}
+
+.phone-img {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 400%;
+	height: 100%;
+	margin-left: -7%;
+}
+
+.phone img {
+	width: 20vw;
+}
+
+#scroll-2,
+#scroll-3,
+#scroll-4 {
+	opacity: 0;
+}
+
+.part-6 {
+	width: 100%;
+	height: 50vh;
+	background-image: url(./assets/IMG/neopop-image-mock.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.part-7 {
+	background-image: url(./assets/IMG/security-bg.jpg);
+}
+
+.part-8 {
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	gap: 20vw;
+	background-image: url(./assets/IMG/trust-bg.jpg);
+}
+
+.part-8 h1 {
+	font-size: 3vw;
+	line-height: 8vh;
+}
+
+.part-8 p {
+	font-family: GilroyM;
+}
+
+.part-9 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 80vh;
+	background-color: #111;
+	color: #fff;
+}
+
+.top-part-9 {
+	padding-top: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10vw;
+	width: 100%;
+	height: 50%;
+}
+
+.rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4vh;
+}
+
+.rating-value {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 2vw;
+	color: #eaeaea;
+}
+
+.rating-value h1 {
+	font-size: 8vw;
+	font-family: GilroyB;
+}
+
+.rating-value h3 {
+	font-size: 2.5vw;
+	font-family: GilroyB;
+}
+
+.rating img {
+	width: 10vw;
+}
+
+.rating button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.7vw 2vw;
+	border-radius: 50px;
+	gap: 0.5vw;
+	border: none;
+	background: black;
+}
+
+.rating button img {
+	width: 2.5vw;
+}
+
+.rating button h3 {
+	font-family: GilroyB;
+	font-size: 1.2vw;
+	color: #eaeaea;
+}
+
+.bottom-part-9 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+}
+
+.slider-part {
+	width: 50vw;
+	height: 30vh;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+	background-color: #f8f8f8;
+}
+
+@media (max-width:500px) {
+	nav {
+		height: 10vh;
+	}
+
+	nav img {
+		width: 8.8vw;
+	}
+
+	nav a {
+		font-size: 3vw;
+	}
+
+	.part-1 {
+		height: 90vh;
+		padding: 0vw 10vw;
+	}
+
+	.part-1 h1 {
+		font-size: 17vw;
+	}
+
+	.part-1 p {
+		font-size: 5vw;
+	}
+
+	.part-1 button {
+		padding: 5vw 11vw;
+		font-size: 4.2vw;
+	}
+
+	.part-same h1 {
+		font-size: 13vw;
+		line-height: normal;
+	}
+
+	.part-same h3 {
+		font-size: 5.5vw;
+	}
+
+	.part-same p {
+		font-size: 4vw;
+		width: 85%;
+	}
+
+	.part-same button {
+		padding: 4vw 9vw;
+		font-size: 3.2vw;
+	}
+
+	.strip {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.strip h3 {
+		font-size: 7vw;
+	}
+
+	.strip img {
+		width: 180vw;
+		margin-left: -50vw;
+	}
+
+	#part-5 {
+		display: none;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.pin-spacer {
+		display: none !important;
+	}
+
+	.left-part-5 {
+		width: 100%;
+	}
+
+	.right-part-5 {
+		width: 100%;
+	}
+
+	.phone {
+		width: 70vw;
+	}
+
+	.phone img {
+		width: 36vw;
+	}
+
+	.part-8 {
+		flex-direction: column;
+		gap: 10vw;
+	}
+
+	.rating-value h1 {
+		font-size: 12vw;
+	}
+
+	.rating-value h3 {
+		font-size: 3.5vw;
+	}
+
+	.rating img {
+		width: 22vw;
+	}
+
+	.rating button h3 {
+		font-size: 3vw;
+		color: #eaeaea;
+	}
+
+	.rating button img {
+		width: 3vw;
+	}
+
+	.rating button {
+		padding: 3.7vw 4vw;
+	}
+
+	.slider-part {
+		width: 80vw;
+	}
+}
